@@ -4,13 +4,13 @@ class BandInput extends Component {
 
   state = {
     bandName: ''
-  }
+  };
 
   handleOnChange(event) {
     this.setState({
       bandName: event.target.value,
     });
-  }
+  };
 
   handleOnSubmit(event) {
     event.preventDefault();
@@ -18,7 +18,7 @@ class BandInput extends Component {
     this.setState({
       bandName: '',
     });
-  }
+  };
 
   render() {
     return (
@@ -32,7 +32,7 @@ class BandInput extends Component {
         </form>
       </div>
     );
-  }
+  };
 };
 
 export default BandInput;
